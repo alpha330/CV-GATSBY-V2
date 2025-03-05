@@ -14,6 +14,7 @@ const Footer = () => {
         justif-content:center;
         flex-direction:column;
         text-align:center;
+        height:10vh;
     `
     return (
         <FooterDiv>

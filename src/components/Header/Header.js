@@ -13,7 +13,7 @@ const Header = () => {
       align-items:center;
       justify-content:space-between;
       flex-direction:row;
-
+      height:10vh;
     `;
 
     const Nav = styled.nav`
