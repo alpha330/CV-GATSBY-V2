@@ -9,19 +9,19 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Ali Blog`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Ali Mahmoodi`,
+      summary: `who lives and works in Tehran building useful things.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    description: `A starter blog demonstrating .`,
+    siteUrl: `http://alimahmoodi.net`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `alimahmoodi38037`,
     },
   },
   plugins: [
-    `gatsby-plugin-image`,
+    
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -29,6 +29,9 @@ module.exports = {
         name: `blog`,
       },
     },
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
