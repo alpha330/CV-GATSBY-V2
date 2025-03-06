@@ -12,8 +12,11 @@ const AboutPage = ({location}) => {
       align-items:center;
       justify-content:center;
       flex-direction:column;
-      
     `
+    const AboutH1text = styled.h1`
+      color: #2c3e50;
+    `
+
     const TermAbout = styled.div`
       display:flex;
       align-items:center;
@@ -32,7 +35,7 @@ const AboutPage = ({location}) => {
       <Layout title={setTitle} location={location}>
           <main>
             <AboutHead>
-            <h1>About Me</h1>
+            <AboutH1text>About Me</AboutH1text>
             </AboutHead>
             
             <TermAbout>

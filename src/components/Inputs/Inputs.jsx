@@ -1,6 +1,6 @@
 import React from "react";
 
-const Inputs = ({type,nameFor,label,onFunction = ()=>{}}) => {
+const Inputs = ({type,nameFor,label,onFunction =()=>{}}) => {
   if(type === "textarea"){
     return(
       <>

@@ -6,7 +6,7 @@ import { StaticImage } from "gatsby-plugin-image"
 const Header = () => {
 
     const HeaderWrapper = styled.header`
-      background-color: #333;
+      background-color: #2c3e50;
       padding: 20px;
       color: #fff;   
       display:flex;
