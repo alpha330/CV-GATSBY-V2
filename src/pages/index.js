@@ -27,7 +27,29 @@ const HomeIndex = ({ data, location }) => {
       width:15rem;
       height:auto;
     }
-      `;
+    @media (max-width: 48rem) {
+      .LogoCompany{
+        width:35px;
+        height:35px;
+      }
+    }
+    @media (max-width: 42rem) {
+      width:100%;
+      heigth:fit-content;
+      display:flex;
+      justify-content:space-evenly;
+      align-items:center;
+      flex-direction:column;
+      overflow-y:auto;
+      overflow-x:hidden;
+      padding:0 1rem !important;
+      .LogoCompany{
+        width:25px;
+        height:25px;
+      }
+    }
+      `
+    ;
 
   const SkillItemsDevOPS = styled.div`
     width:20rem;
@@ -56,20 +78,48 @@ const HomeIndex = ({ data, location }) => {
       background-image: linear-gradient(to right,rgba(0, 0, 0, 0.74),rgba(0, 0, 0, 0.74)),url(${DevOps});
     }
     &:hover h1 {
-      top:5%;
-      left:50%;
-      font-size:3rem;
-      transform: rotate(0);
-      
+    top:5%;
+    left:50%;
+    font-size:3rem;
+    transform: rotate(0);
+    @media (max-width: 48rem) {
+      font-size:1.3rem;
     }
-    &:hover h2 {
-      font-size:1rem;
-      display:block;
-      font-weight:400;
+  }
+  &:hover h2 {
+    font-size:1rem;
+    display:block;
+    font-weight:400;
+    @media (max-width: 48rem) {
+      font-size:.6rem;
     }
+  }
     &:hover div {
       display:block;
     }
+     @media (max-width: 90rem) {
+    width:10rem;
+    }
+
+    @media (max-width: 42rem) {
+      background-image: linear-gradient(to right,rgba(0, 0, 0, 0.74),rgba(0, 0, 0, 0.74)),url(${DevOps});
+      width:100%;
+      height:fit-content;
+      background-size:cover;
+      background-position:center;
+      background-repeat:no-repeat;
+      transition: all 800ms ease;
+      display:flex;
+      flex-direction:column;
+      overflow:hidden;
+      padding:2rem;
+      border-radius:5px;
+      animation: indexItemDevopsAndManagement 1s ease;
+      justify-content:space-evenly;
+      align-items:center;   
+      margin-bottom:1rem;   
+    }
+   
   `
 
   const SkillItemsNetwork = styled.div`
@@ -99,21 +149,50 @@ const HomeIndex = ({ data, location }) => {
       background-image: linear-gradient(to right,rgba(0, 0, 0, 0.74),rgba(0, 0, 0, 0.74)),url(${Netwokr});
     }
     &:hover h1 {
-      top:5%;
-      left:50%;
-      font-size:3rem;
-      transform: rotate(0);
-
+    top:5%;
+    left:50%;
+    font-size:3rem;
+    transform: rotate(0);
+    @media (max-width: 48rem) {
+      font-size:1.3rem;
     }
-    &:hover h2 {
-      font-size:1rem;
-      display:block;
-      font-weight:400;
+  }
+  &:hover h2 {
+    font-size:1rem;
+    display:block;
+    font-weight:400;
+    @media (max-width: 48rem) {
+      font-size:.6rem;
     }
+  }
 
     &:hover div {
       display:block;
     }
+
+    @media (max-width: 90rem) {
+    width:10rem;
+    }
+
+      @media (max-width: 42rem) {
+      background-image: linear-gradient(to right,rgba(0, 0, 0, 0.74),rgba(0, 0, 0, 0.74)),url(${Netwokr});
+      width:100%;
+      height:fit-content;
+      background-size:cover;
+      background-position:center;
+      background-repeat:no-repeat;
+      transition: all 800ms ease;
+      display:flex;
+      flex-direction:column;
+      overflow:hidden;
+      padding:2rem;
+      border-radius:5px;
+      animation: indexItemDevopsAndManagement 1s ease;
+      justify-content:space-evenly;
+      align-items:center;   
+      margin-bottom:1rem;   
+    }
+       
   `
 
   const SkillItemsPrograming = styled.div`
@@ -143,20 +222,47 @@ const HomeIndex = ({ data, location }) => {
       background-image: linear-gradient(to right,rgba(0, 0, 0, 0.74),rgba(0, 0, 0, 0.74)),url(${Programming});
     }
     &:hover h1 {
-      top:5%;
-      left:50%;
-      font-size:3rem;
-      transform: rotate(0);
-
+    top:5%;
+    left:50%;
+    font-size:3rem;
+    transform: rotate(0);
+    @media (max-width: 48rem) {
+      font-size:1.3rem;
     }
-    &:hover h2 {
-      font-size:1rem;
-      display:block;
-      font-weight:400;
+  }
+  &:hover h2 {
+    font-size:1rem;
+    display:block;
+    font-weight:400;
+    @media (max-width: 48rem) {
+      font-size:.6rem;
     }
+  }
     &:hover div {
       display:block;
     }
+      @media (max-width: 90rem) {
+    width:10rem;
+    }
+      @media (max-width: 42rem) {
+      background-image: linear-gradient(to right,rgba(0, 0, 0, 0.74),rgba(0, 0, 0, 0.74)),url(${Programming});
+      width:100%;
+      height:fit-content;
+      background-size:cover;
+      background-position:center;
+      background-repeat:no-repeat;
+      transition: all 800ms ease;
+      display:flex;
+      flex-direction:column;
+      overflow:hidden;
+      padding:2rem;
+      border-radius:5px;
+      animation: indexItemDevopsAndManagement 1s ease;
+      justify-content:space-evenly;
+      align-items:center;   
+      margin-bottom:1rem;   
+    }
+    
   `
 
   const SkillItemsBlockchain = styled.div`
@@ -190,17 +296,46 @@ const HomeIndex = ({ data, location }) => {
     left:50%;
     font-size:3rem;
     transform: rotate(0);
-
+    @media (max-width: 48rem) {
+      font-size:1.3rem;
+    }
   }
   &:hover h2 {
     font-size:1rem;
     display:block;
     font-weight:400;
+    @media (max-width: 48rem) {
+      font-size:.6rem;
+    }
   }
     &:hover div {
       display:block;
     }
+  @media (max-width: 90rem) {
+    width:10rem;
+    }
+
+  @media (max-width: 42rem) {
+      background-image: linear-gradient(to right,rgba(0, 0, 0, 0.74),rgba(0, 0, 0, 0.74)),url(${BlockChain});
+      width:100%;
+      height:fit-content;
+      background-size:cover;
+      background-position:center;
+      background-repeat:no-repeat;
+      transition: all 800ms ease;
+      display:flex;
+      flex-direction:column;
+      overflow:hidden;
+      padding:2rem;
+      border-radius:5px;
+      animation: indexItemDevopsAndManagement 1s ease;
+      justify-content:space-evenly;
+      align-items:center;   
+      margin-bottom:1rem;   
+    }
+    
   `
+  
 
   const SkillItemsManagement = styled.div`
   width:20rem;
@@ -233,16 +368,45 @@ const HomeIndex = ({ data, location }) => {
     left:50%;
     font-size:3rem;
     transform: rotate(0);
-
+    @media (max-width: 48rem) {
+      font-size:1.3rem;
+    }
   }
   &:hover h2 {
     font-size:1rem;
     display:block;
     font-weight:400;
-  }
-    &:hover div {
-      display:block;
+    @media (max-width: 48rem) {
+      font-size:.6rem;
     }
+  }
+  &:hover div {
+    display:block;
+  }
+
+  @media (max-width: 90rem) {
+   width:10rem;
+   }
+
+  @media (max-width: 42rem) {
+      background-image: linear-gradient(to right,rgba(0, 0, 0, 0.74),rgba(0, 0, 0, 0.74)),url(${Management});
+      width:100%;
+      height:fit-content;
+      background-size:cover;
+      background-position:center;
+      background-repeat:no-repeat;
+      transition: all 800ms ease;
+      display:flex;
+      flex-direction:column;
+      overflow:hidden;
+      padding:2rem;
+      border-radius:5px;
+      animation: indexItemDevopsAndManagement 1s ease;
+      justify-content:space-evenly;
+      align-items:center;   
+      margin-bottom:1rem;   
+    }
+  
   `
 
   const TitleSkill = styled.h1`
@@ -255,6 +419,16 @@ const HomeIndex = ({ data, location }) => {
     transition: all 800ms ease;
     color:white;
     text-transform:capitalize;
+    @media (max-width: 48rem) {
+      font-size:2rem;
+    }
+
+    @media (max-width: 42rem) {
+      font-size:1.5rem;
+      top:5%;
+      left:50%;
+      transform: rotate(0);
+    }
   `
   const ContentSkill = styled.h2`
     display:none;
@@ -268,12 +442,24 @@ const HomeIndex = ({ data, location }) => {
     animation: h2Index 10s ease;
     color:white;
     background:rgba(0, 0, 0, 0.541);
+    @media (max-width: 48rem) {
+      font-size:.8rem;
+    }
+    @media (max-width: 42rem) {
+      display:block;
+      font-size:.7rem;
+    }
   `
   const ContentImportantSkilled = styled.div`
     width:100%;
     height:fit-content;
     padding:.5rem 0;
     display:none;
+    @media (max-width: 42rem) {
+      display:block;
+      height:fit-content;
+      padding:.5rem 0;
+    }
   `
 
   const Contentlist = styled.ul`
@@ -298,16 +484,14 @@ const HomeIndex = ({ data, location }) => {
     text-align:center;
     padding:0;
     margin:0;
-    font-size:2rem;
     transition: all 800ms ease;
-    line-height: 2;
     animation: h2Index 10s ease;
     color:white;
     text-transform:uppercase;
   `
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={location} title={siteTitle}>      
       <MainIndexDiv>
         <SkillItemsDevOPS>
           <TitleSkill>
