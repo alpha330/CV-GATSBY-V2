@@ -6,7 +6,7 @@ import { StaticImage } from "gatsby-plugin-image"
 const Header = () => {
 
     const HeaderWrapper = styled.header`
-      background-color: #333;
+      background-color: #2c3e50;
       padding: 20px;
       color: #fff;   
       display:flex;
@@ -43,6 +43,7 @@ const Header = () => {
         />
         <Nav>
             <Link to="/" >Home</Link>
+            <Link to="/blog" >Blog</Link>
             <Link to="/about" >About</Link>
             <Link to="/contact-me">Contact Me</Link>                 
         </Nav>

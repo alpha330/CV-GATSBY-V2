@@ -4,7 +4,7 @@ import Bio from "../bio";
 
 const Footer = () => {
     const FooterDiv = styled.div`
-        background: #333;
+        background: #2c3e50;
         color: #fff; 
         textAlign: center;
         padding: 10px; 
