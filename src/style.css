@@ -352,7 +352,7 @@ main{
 
 @media (max-width: 42rem) {
   body{
-    font-size: 40%;
+    font-size: 50%;
   }
   blockquote {
     padding: var(--spacing-0) var(--spacing-0) var(--spacing-0) var(--spacing-4);
