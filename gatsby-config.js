@@ -19,6 +19,7 @@ module.exports = {
         name: `blog`,
       },
     },
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,  // اضافه کردن این خط
